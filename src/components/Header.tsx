@@ -55,72 +55,83 @@ export default function Header({
     href === `/${locale}` ? pathname === href : pathname?.startsWith(href);
 
   return (
-    <header
-      className={`sticky top-0 z-50 transition-colors duration-300 ${
-        scrolled || open
-          ? "bg-offwhite/95 backdrop-blur border-b border-line"
-          : "bg-transparent border-b border-transparent"
-      }`}
-    >
-      <div className="container-page flex h-20 items-center justify-between">
-        <Link
-          href={`/${locale}`}
-          className="font-serif-display leading-none tracking-wide"
-          aria-label={dict.meta.siteName}
-        >
-          <span className="block text-xl">AV</span>
-          <span className="block text-[0.65rem] tracking-[0.3em] text-charcoal/70 -mt-0.5">
-            MAISONNIER
-          </span>
-        </Link>
-
-        <nav
-          className="hidden lg:flex items-center gap-8 text-sm tracking-wide"
-          aria-label="Primary"
-        >
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`transition-opacity hover:opacity-70 ${
-                isActive(item.href) ? "text-bronze" : "text-charcoal"
-              }`}
-              aria-current={isActive(item.href) ? "page" : undefined}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="hidden lg:flex items-center gap-5">
-          <LanguageSwitcher locale={locale} pathname={pathname ?? `/${locale}`} label={dict.nav.language} />
+    <header className="sticky top-0 z-50">
+      {/*
+        The scrolled/open background lives on this inner div, not on
+        <header> itself. backdrop-blur applies a CSS backdrop-filter,
+        and a backdrop-filter on an ancestor creates a new containing
+        block for any position:fixed descendant (same effect as
+        transform). That silently broke the fixed mobile menu panel
+        below: it was collapsing against the header's own box instead
+        of the viewport. Keeping <header> filter-free fixes it.
+      */}
+      <div
+        className={`transition-colors duration-300 ${
+          scrolled || open
+            ? "bg-offwhite/95 backdrop-blur border-b border-line"
+            : "bg-transparent border-b border-transparent"
+        }`}
+      >
+        <div className="container-page flex h-20 items-center justify-between">
           <Link
-            href={`/${locale}/contact`}
-            className="border border-charcoal px-5 py-2.5 text-xs tracking-[0.14em] uppercase hover:bg-charcoal hover:text-offwhite transition-colors"
+            href={`/${locale}`}
+            className="font-serif-display leading-none tracking-wide"
+            aria-label={dict.meta.siteName}
           >
-            {dict.nav.consultation}
+            <span className="block text-xl">AV</span>
+            <span className="block text-[0.65rem] tracking-[0.3em] text-charcoal/70 -mt-0.5">
+              MAISONNIER
+            </span>
           </Link>
-        </div>
 
-        <button
-          type="button"
-          className="lg:hidden inline-flex flex-col items-center justify-center gap-1.5 w-11 h-11"
-          aria-label={open ? dict.nav.menuClose : dict.nav.menuOpen}
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          onClick={() => setOpen((v) => !v)}
-        >
-          <span
-            className={`block h-px w-6 bg-charcoal transition-transform ${
-              open ? "translate-y-[3px] rotate-45" : ""
-            }`}
-          />
-          <span
-            className={`block h-px w-6 bg-charcoal transition-transform ${
-              open ? "-translate-y-[3px] -rotate-45" : ""
-            }`}
-          />
-        </button>
+          <nav
+            className="hidden lg:flex items-center gap-8 text-sm tracking-wide"
+            aria-label="Primary"
+          >
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`transition-opacity hover:opacity-70 ${
+                  isActive(item.href) ? "text-bronze" : "text-charcoal"
+                }`}
+                aria-current={isActive(item.href) ? "page" : undefined}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="hidden lg:flex items-center gap-5">
+            <LanguageSwitcher locale={locale} pathname={pathname ?? `/${locale}`} label={dict.nav.language} />
+            <Link
+              href={`/${locale}/contact`}
+              className="border border-charcoal px-5 py-2.5 text-xs tracking-[0.14em] uppercase hover:bg-charcoal hover:text-offwhite transition-colors"
+            >
+              {dict.nav.consultation}
+            </Link>
+          </div>
+
+          <button
+            type="button"
+            className="lg:hidden inline-flex flex-col items-center justify-center gap-1.5 w-11 h-11"
+            aria-label={open ? dict.nav.menuClose : dict.nav.menuOpen}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span
+              className={`block h-px w-6 bg-charcoal transition-transform ${
+                open ? "translate-y-[3px] rotate-45" : ""
+              }`}
+            />
+            <span
+              className={`block h-px w-6 bg-charcoal transition-transform ${
+                open ? "-translate-y-[3px] -rotate-45" : ""
+              }`}
+            />
+          </button>
+        </div>
       </div>
 
       <div
