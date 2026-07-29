@@ -77,6 +77,16 @@ export default function Header({
             href={`/${locale}`}
             className="font-serif-display leading-none tracking-wide"
             aria-label={dict.meta.siteName}
+            onClick={(e) => {
+              // If we're already on the home page, Link won't trigger a
+              // navigation (same URL), so nothing scrolls. Handle that
+              // case explicitly. Other pages already land at the top on
+              // navigation, so no extra handling is needed there.
+              if (pathname === `/${locale}`) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
           >
             <span className="block text-xl">AV</span>
             <span className="block text-[0.65rem] tracking-[0.3em] text-charcoal/70 -mt-0.5">
