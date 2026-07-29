@@ -460,11 +460,11 @@ const en = {
   legal: {
     privacy: {
       title: "Privacy Policy",
-      updated: "Last updated: [DATE TO BE CONFIRMED]",
+      updated: "Last updated: 29 July 2026",
       sections: [
         {
           heading: "Who we are",
-          body: "This website is operated by [LEGAL COMPANY NAME], acting under the trading name AV Maisonnier. For the purposes of applicable data protection law, [DATA CONTROLLER DETAILS] is the data controller responsible for the information described in this policy",
+          body: "This website provides general information only and does not process bookings, payments or binding agreements. For any question about this Privacy Policy or about how your information is handled, please contact contact@avmaisonnier.com",
         },
         {
           heading: "Information we collect",
@@ -484,13 +484,13 @@ const en = {
         },
         {
           heading: "Contact",
-          body: "Questions about this Privacy Policy can be sent to contact@avmaisonnier.com or to [REGISTERED ADDRESS]",
+          body: "Questions about this Privacy Policy can be sent to contact@avmaisonnier.com",
         },
       ],
     },
     cookiePolicy: {
       title: "Cookie Policy",
-      updated: "Last updated: [DATE TO BE CONFIRMED]",
+      updated: "Last updated: 29 July 2026",
       sections: [
         {
           heading: "What cookies do",
@@ -512,11 +512,11 @@ const en = {
     },
     legalNotice: {
       title: "Legal Notice",
-      updated: "Last updated: [DATE TO BE CONFIRMED]",
+      updated: "Last updated: 29 July 2026",
       sections: [
         {
           heading: "Publisher",
-          body: "This website is published by [LEGAL COMPANY NAME], registered under [REGISTRATION NUMBER], with its registered office at [REGISTERED ADDRESS]",
+          body: "This website has an informational purpose and presents AV Maisonnier's private villa management service. It is published under the AV Maisonnier name. AV Maisonnier does not take bookings, payments or conclude binding agreements through this website; the terms of any engagement, including full company details, are set out individually in the service agreement signed directly with the client. For any question, please contact contact@avmaisonnier.com",
         },
         {
           heading: "Contact",
@@ -524,11 +524,11 @@ const en = {
         },
         {
           heading: "Hosting",
-          body: "Hosting details will be confirmed here prior to publication: [HOSTING PROVIDER DETAILS]",
+          body: "This website is hosted by Vercel Inc. (vercel.com)",
         },
         {
           heading: "Intellectual property",
-          body: "The texts, images and overall design of this website are the property of [LEGAL COMPANY NAME] or its licensors and may not be reproduced without prior written consent",
+          body: "The texts, images and overall design of this website are the property of AV Maisonnier and may not be reproduced without prior written consent",
         },
         {
           heading: "Scope of services",

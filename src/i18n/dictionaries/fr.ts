@@ -460,11 +460,11 @@ const fr = {
   legal: {
     privacy: {
       title: "Politique de confidentialité",
-      updated: "Dernière mise à jour : [DATE À CONFIRMER]",
+      updated: "Dernière mise à jour : 29 juillet 2026",
       sections: [
         {
           heading: "Qui sommes-nous",
-          body: "Ce site est édité par [NOM LÉGAL DE LA SOCIÉTÉ], opérant sous le nom commercial AV Maisonnier. Au sens du droit applicable en matière de protection des données, [COORDONNÉES DU RESPONSABLE DE TRAITEMENT] est le responsable du traitement des informations décrites dans la présente politique",
+          body: "Ce site a une vocation purement informative et ne permet ni réservation, ni paiement, ni conclusion d'engagement contractuel. Pour toute question relative à cette Politique de confidentialité ou au traitement de vos données, contactez contact@avmaisonnier.com",
         },
         {
           heading: "Informations que nous collectons",
@@ -484,13 +484,13 @@ const fr = {
         },
         {
           heading: "Contact",
-          body: "Toute question relative à cette Politique de confidentialité peut être adressée à contact@avmaisonnier.com ou à [ADRESSE DU SIÈGE SOCIAL]",
+          body: "Toute question relative à cette Politique de confidentialité peut être adressée à contact@avmaisonnier.com",
         },
       ],
     },
     cookiePolicy: {
       title: "Politique relative aux cookies",
-      updated: "Dernière mise à jour : [DATE À CONFIRMER]",
+      updated: "Dernière mise à jour : 29 juillet 2026",
       sections: [
         {
           heading: "Le rôle des cookies",
@@ -512,11 +512,11 @@ const fr = {
     },
     legalNotice: {
       title: "Mentions légales",
-      updated: "Dernière mise à jour : [DATE À CONFIRMER]",
+      updated: "Dernière mise à jour : 29 juillet 2026",
       sections: [
         {
           heading: "Éditeur du site",
-          body: "Ce site est édité par [NOM LÉGAL DE LA SOCIÉTÉ], immatriculée sous le numéro [NUMÉRO D'IMMATRICULATION], dont le siège social est situé [ADRESSE DU SIÈGE SOCIAL]",
+          body: "Ce site a une vocation purement informative et présente le service de gestion de villas privées d'AV Maisonnier. Il est publié sous le nom AV Maisonnier. AV Maisonnier ne prend aucune réservation, aucun paiement et ne conclut aucun engagement contractuel via ce site ; les conditions de toute collaboration, y compris les coordonnées complètes de la société, sont précisées individuellement dans le contrat de service signé directement avec le client. Pour toute question, contactez contact@avmaisonnier.com",
         },
         {
           heading: "Contact",
@@ -524,11 +524,11 @@ const fr = {
         },
         {
           heading: "Hébergement",
-          body: "Les coordonnées de l'hébergeur seront précisées ici avant la publication du site : [COORDONNÉES DE L'HÉBERGEUR]",
+          body: "Ce site est hébergé par Vercel Inc. (vercel.com)",
         },
         {
           heading: "Propriété intellectuelle",
-          body: "Les textes, images et l'ensemble du design de ce site sont la propriété de [NOM LÉGAL DE LA SOCIÉTÉ] ou de ses concédants et ne peuvent être reproduits sans accord écrit préalable",
+          body: "Les textes, images et l'ensemble du design de ce site sont la propriété d'AV Maisonnier et ne peuvent être reproduits sans accord écrit préalable",
         },
         {
           heading: "Étendue des prestations",

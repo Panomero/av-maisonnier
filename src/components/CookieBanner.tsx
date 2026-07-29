@@ -46,18 +46,24 @@ export default function CookieBanner({ dict }: { dict: Dictionary }) {
             {dict.cookie.settingsLink}
           </Link>
         </p>
+        {/*
+          CNIL guidance requires "Accept" and "Decline" to carry equal visual
+          weight (same size, color intensity and prominence) — no dark
+          pattern nudging the visitor toward acceptance. Both buttons below
+          use the same outlined style; only their order/label differs.
+        */}
         <div className="flex gap-3 shrink-0">
           <button
             type="button"
             onClick={() => decide("declined")}
-            className="px-4 py-2 text-xs tracking-widest uppercase border border-charcoal/30 hover:border-charcoal transition-colors"
+            className="px-4 py-2 text-xs tracking-widest uppercase border border-charcoal hover:bg-charcoal hover:text-offwhite transition-colors"
           >
             {dict.cookie.decline}
           </button>
           <button
             type="button"
             onClick={() => decide("accepted")}
-            className="px-4 py-2 text-xs tracking-widest uppercase bg-charcoal text-offwhite hover:bg-charcoal/90 transition-colors"
+            className="px-4 py-2 text-xs tracking-widest uppercase border border-charcoal hover:bg-charcoal hover:text-offwhite transition-colors"
           >
             {dict.cookie.accept}
           </button>
