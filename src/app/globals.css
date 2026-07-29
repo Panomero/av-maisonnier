@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --color-ivory: #f7f3ec;
+  --color-offwhite: #fbf9f5;
+  --color-charcoal: #22201d;
+  --color-navy: #131a2b;
+  --color-navy-light: #1c2540;
+  --color-bronze: #a9865c;
+  --color-bronze-light: #c7ab84;
+  --color-line: rgba(34, 32, 29, 0.14);
+  --color-line-dark: rgba(247, 243, 236, 0.16);
+
+  /*
+   * Typography note: this project ships with elegant, widely available
+   * system font stacks so it builds and renders correctly without any
+   * network access to a font CDN. For a closer match to the brief's
+   * editorial-luxury typography, self-host "Noto Serif" (headings) and
+   * "Inter" (body) via next/font/local, or re-enable next/font/google —
+   * both support Latin, Cyrillic and French diacritics. See README.md.
+   */
+  --font-serif: Georgia, "Iowan Old Style", "Noto Serif", "Times New Roman", serif;
+  --font-sans: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial,
+    sans-serif;
+}
+
+@theme inline {
+  --color-ivory: var(--color-ivory);
+  --color-offwhite: var(--color-offwhite);
+  --color-charcoal: var(--color-charcoal);
+  --color-navy: var(--color-navy);
+  --color-navy-light: var(--color-navy-light);
+  --color-bronze: var(--color-bronze);
+  --color-bronze-light: var(--color-bronze-light);
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  * {
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-offwhite);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+}
+
+.font-serif-display {
+  font-family: var(--font-serif);
+}
+
+.container-page {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 5vw, 3.5rem);
+  padding-right: clamp(1.25rem, 5vw, 3.5rem);
+}
+
+.prose-measure {
+  max-width: 42rem;
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-bronze);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-bronze);
+  outline-offset: 3px;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
