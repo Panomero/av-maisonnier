@@ -84,8 +84,8 @@ export async function POST(request: NextRequest) {
   };
 
   const apiKey = process.env.RESEND_API_KEY;
-  const contactEmail = process.env.CONTACT_EMAIL || "contact@avmaisonnier.com";
-  const fromEmail = process.env.CONTACT_FROM_EMAIL || "website@avmaisonnier.com";
+  const contactEmail = process.env.CONTACT_EMAIL || "office@an21.homes";
+  const fromEmail = process.env.CONTACT_FROM_EMAIL || "website@an21.homes";
 
   if (!apiKey) {
     // No provider configured yet — fail loudly in server logs but do not
@@ -102,7 +102,7 @@ export async function POST(request: NextRequest) {
     const confirmation = buildConfirmationEmail(payload);
 
     await resend.emails.send({
-      from: `AV Maisonnier Website <${fromEmail}>`,
+      from: `AN21 Website <${fromEmail}>`,
       to: contactEmail,
       replyTo: email,
       subject: notification.subject,
@@ -110,7 +110,7 @@ export async function POST(request: NextRequest) {
     });
 
     await resend.emails.send({
-      from: `AV Maisonnier <${fromEmail}>`,
+      from: `AN21 <${fromEmail}>`,
       to: email,
       subject: confirmation.subject,
       html: confirmation.html,

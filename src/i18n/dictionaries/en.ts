@@ -3,7 +3,7 @@ import type { Dictionary } from "../dictionary.types";
 const en = {
   htmlLang: "en",
   meta: {
-    siteName: "AV Maisonnier",
+    siteName: "AN21",
     descriptor: "Private Villa Management",
   },
   nav: {
@@ -46,27 +46,28 @@ const en = {
   },
   home: {
     seo: {
-      title: "AV Maisonnier — Private Villa Management, French Riviera",
+      title: "AN21 — Private Villa Management, French Riviera",
       description:
-        "AV Maisonnier is a single trusted point of contact for owners of private villas on the French Riviera, coordinating property, staff, contractors and daily requirements",
-      ogTitle: "AV Maisonnier — Private Villa Management",
+        "AN21 is a single trusted point of contact for owners of private villas on the French Riviera, coordinating property, staff, contractors and daily requirements",
+      ogTitle: "AN21 — Private Villa Management",
       ogDescription:
         "One trusted point of contact for your villa. Property, staff and contractor coordination across the French Riviera",
     },
     hero: {
-      brandLine1: "AV",
-      brandLine2: "MAISONNIER",
+      brandLine1: "AN21",
+      brandLine2: "PRIVATE OFFICE",
       descriptor: "PRIVATE VILLA MANAGEMENT",
+      tagline: "The operator of your comfort",
       title: "One trusted point of contact for your villa",
       subtitle:
-        "AV Maisonnier coordinates the property, staff, contractors and day-to-day requirements of private residences on the French Riviera",
+        "AN21 coordinates the property, staff, contractors and day-to-day requirements of private residences on the French Riviera",
       primaryCta: "Request a Private Consultation",
       secondaryCta: "Explore the Service",
     },
     idea: {
       eyebrow: "The Idea",
       title: "Your home should work beautifully, even when you are away",
-      body: "A private villa requires constant coordination. Staff, contractors, maintenance, supplies and preparation must work as one system. AV Maisonnier provides a single trusted point of contact and takes responsibility for coordinating the daily operation of the residence. The work does not stop when the owner leaves: inspections, correspondence with contractors and staff, and oversight of the property continue on an ongoing basis, whether or not you are in residence",
+      body: "A private villa requires constant coordination. Staff, contractors, maintenance, supplies and preparation must work as one system. AN21 provides a single trusted point of contact and takes responsibility for coordinating the daily operation of the residence. The work does not stop when the owner leaves: inspections, correspondence with contractors and staff, and oversight of the property continue on an ongoing basis, whether or not you are in residence",
       statement: "One contact. One system of responsibility",
     },
     coreServices: {
@@ -116,10 +117,11 @@ const en = {
     agenciesBlock: {
       eyebrow: "For Partner Agencies",
       title: "A natural extension of your agency's client offering",
-      body: "AV Maisonnier enables staffing agencies to offer long-term villa management without building an internal operations department. Your agency retains its role as the trusted staffing partner. New household recruitment requirements are referred back to the partner agency",
+      body: "AN21 enables staffing agencies to offer long-term villa management without building an internal operations department. Your agency retains its role as the trusted staffing partner. New household recruitment requirements are referred back to the partner agency",
       cta: "Explore Agency Partnerships",
     },
     closing: {
+      kicker: "More time for what matters",
       title: "Every residence requires a different level of attention",
       body: "Our service is designed around the property, the household and the owner's expectations",
       cta: "Arrange a Confidential Conversation",
@@ -127,17 +129,17 @@ const en = {
   },
   owners: {
     seo: {
-      title: "For Owners — Private Villa Management | AV Maisonnier",
+      title: "For Owners — Private Villa Management | AN21",
       description:
-        "Private villa management built around the owner. AV Maisonnier coordinates the people, processes and services required to keep a private residence prepared, protected and running smoothly",
-      ogTitle: "For Owners | AV Maisonnier",
+        "Private villa management built around the owner. AN21 coordinates the people, processes and services required to keep a private residence prepared, protected and running smoothly",
+      ogTitle: "For Owners | AN21",
       ogDescription:
         "One trusted point of contact for your villa, before, during and after every stay",
     },
     hero: {
       title: "Private villa management built around the owner",
       subtitle:
-        "AV Maisonnier coordinates the people, processes and services required to keep a private residence prepared, protected and running smoothly",
+        "AN21 coordinates the people, processes and services required to keep a private residence prepared, protected and running smoothly",
     },
     sections: [
       {
@@ -197,10 +199,10 @@ const en = {
   },
   services: {
     seo: {
-      title: "Services — Property, Staff and Lifestyle Coordination | AV Maisonnier",
+      title: "Services — Property, Staff and Lifestyle Coordination | AN21",
       description:
         "A coordinated system for the residence, household and lifestyle: property management, staff coordination and lifestyle support for private villas on the French Riviera",
-      ogTitle: "Services | AV Maisonnier",
+      ogTitle: "Services | AN21",
       ogDescription:
         "Property management, staff coordination and lifestyle support, brought together as one service",
     },
@@ -259,21 +261,21 @@ const en = {
   },
   agencies: {
     seo: {
-      title: "For Agencies — Villa Management Partnership | AV Maisonnier",
+      title: "For Agencies — Villa Management Partnership | AN21",
       description:
-        "AV Maisonnier helps staffing agencies extend the client relationship beyond placement, with a long-term villa management service that keeps the agency as the trusted recruitment partner",
-      ogTitle: "For Agencies | AV Maisonnier",
+        "AN21 helps staffing agencies extend the client relationship beyond placement, with a long-term villa management service that keeps the agency as the trusted recruitment partner",
+      ogTitle: "For Agencies | AN21",
       ogDescription:
         "Extend the client relationship beyond the placement, without building an operational department",
     },
     hero: {
       title: "Extend the client relationship beyond the placement",
       subtitle:
-        "AV Maisonnier helps staffing agencies introduce an ongoing villa management service while retaining their role as the trusted recruitment partner",
+        "AN21 helps staffing agencies introduce an ongoing villa management service while retaining their role as the trusted recruitment partner",
     },
     opportunity: {
       title: "The Opportunity",
-      body: "After a successful placement, the owner continues to require support with the property, household team, contractors and everyday operations. AV Maisonnier allows the agency to remain connected to the client through a broader long-term service offering. A new service integrated into your agency's client offering",
+      body: "After a successful placement, the owner continues to require support with the property, household team, contractors and everyday operations. AN21 allows the agency to remain connected to the client through a broader long-term service offering. A new service integrated into your agency's client offering",
       items: [
         "A broader client proposition",
         "Stronger long-term relationships",
@@ -294,7 +296,7 @@ const en = {
         "Recruitment advice",
         "Ongoing staffing relationship",
       ],
-      avTitle: "AV Maisonnier",
+      avTitle: "AN21",
       avItems: [
         "Property operations",
         "Existing staff coordination",
@@ -310,10 +312,10 @@ const en = {
     partnership: {
       title: "How the Partnership Works",
       steps: [
-        "The agency introduces AV Maisonnier to a suitable client",
+        "The agency introduces AN21 to a suitable client",
         "We hold a private consultation with the owner",
         "A tailored service scope is prepared",
-        "AV Maisonnier manages the ongoing operation of the residence",
+        "AN21 manages the ongoing operation of the residence",
         "New recruitment requirements are referred to the partner agency",
         "Partnership terms are agreed individually",
       ],
@@ -334,10 +336,10 @@ const en = {
   },
   howItWorks: {
     seo: {
-      title: "How It Works — A Clear Management Process | AV Maisonnier",
+      title: "How It Works — A Clear Management Process | AN21",
       description:
-        "From a private consultation to ongoing coordination and reporting: how AV Maisonnier structures private villa management on the French Riviera",
-      ogTitle: "How It Works | AV Maisonnier",
+        "From a private consultation to ongoing coordination and reporting: how AN21 structures private villa management on the French Riviera",
+      ogTitle: "How It Works | AN21",
       ogDescription: "A clear and discreet management process, step by step",
     },
     hero: { title: "A clear and discreet management process" },
@@ -388,16 +390,16 @@ const en = {
   },
   about: {
     seo: {
-      title: "About — AV Maisonnier",
+      title: "About — AN21",
       description:
-        "AV Maisonnier was created to provide owners of private residences with one trusted point of contact for the daily operation of their property, across the French Riviera",
-      ogTitle: "About | AV Maisonnier",
+        "AN21 was created to provide owners of private residences with one trusted point of contact for the daily operation of their property, across the French Riviera",
+      ogTitle: "About | AN21",
       ogDescription:
         "A private management approach centred on trust and responsibility",
     },
     hero: { title: "A private management approach centred on trust and responsibility" },
     intro: [
-      "AV Maisonnier was created to provide owners of private residences with one trusted point of contact for the daily operation of their property",
+      "AN21 was created to provide owners of private residences with one trusted point of contact for the daily operation of their property",
       "The service combines structured property management, staff coordination and personal support in a discreet and highly individual format",
       "Our role is not to replace specialist contractors, security providers or recruitment agencies. Our role is to coordinate them around the interests of the owner",
     ],
@@ -406,14 +408,14 @@ const en = {
       items: ["Discretion", "Responsibility", "Clarity", "Continuity", "Personal attention"],
     },
     geography: "Serving private residences across the French Riviera",
-    role: "AV Maisonnier coordinates qualified third-party providers and oversees the agreed scope of work",
+    role: "AN21 coordinates qualified third-party providers and oversees the agreed scope of work",
   },
   contact: {
     seo: {
-      title: "Contact — Private Consultation | AV Maisonnier",
+      title: "Contact — Private Consultation | AN21",
       description:
-        "Begin a confidential conversation with AV Maisonnier about your residence, current requirements or a partnership you would like to explore",
-      ogTitle: "Contact | AV Maisonnier",
+        "Begin a confidential conversation with AN21 about your residence, current requirements or a partnership you would like to explore",
+      ogTitle: "Contact | AN21",
       ogDescription: "A confidential conversation is the first step",
     },
     hero: {
@@ -446,14 +448,14 @@ const en = {
       successBody: "Your enquiry has been received. We will contact you privately",
       errorTitle: "Something went wrong",
       errorBody:
-        "We could not send your enquiry. Please try again, or write to us directly at contact@avmaisonnier.com",
+        "We could not send your enquiry. Please try again, or write to us directly at office@an21.homes",
       honeypotLabel: "Leave this field empty",
     },
     details: {
       name: "Artem",
-      title: "CEO, AV Maisonnier",
+      title: "CEO, AN21",
       phone: "+39 329 664 85 63",
-      email: "contact@avmaisonnier.com",
+      email: "office@an21.homes",
       availability: "French Riviera · By appointment",
     },
   },
@@ -464,7 +466,7 @@ const en = {
       sections: [
         {
           heading: "Who we are",
-          body: "This website provides general information only and does not process bookings, payments or binding agreements. For any question about this Privacy Policy or about how your information is handled, please contact contact@avmaisonnier.com",
+          body: "This website provides general information only and does not process bookings, payments or binding agreements. For any question about this Privacy Policy or about how your information is handled, please contact office@an21.homes",
         },
         {
           heading: "Information we collect",
@@ -480,11 +482,11 @@ const en = {
         },
         {
           heading: "Your rights",
-          body: "Depending on your location, you may have the right to access, correct, delete or restrict the use of your personal data, and to object to its processing. To exercise these rights, please contact us at contact@avmaisonnier.com",
+          body: "Depending on your location, you may have the right to access, correct, delete or restrict the use of your personal data, and to object to its processing. To exercise these rights, please contact us at office@an21.homes",
         },
         {
           heading: "Contact",
-          body: "Questions about this Privacy Policy can be sent to contact@avmaisonnier.com",
+          body: "Questions about this Privacy Policy can be sent to office@an21.homes",
         },
       ],
     },
@@ -516,11 +518,11 @@ const en = {
       sections: [
         {
           heading: "Publisher",
-          body: "This website has an informational purpose and presents AV Maisonnier's private villa management service. It is published under the AV Maisonnier name. AV Maisonnier does not take bookings, payments or conclude binding agreements through this website; the terms of any engagement, including full company details, are set out individually in the service agreement signed directly with the client. For any question, please contact contact@avmaisonnier.com",
+          body: "This website has an informational purpose and presents AN21's private villa management service. It is published under the AN21 name. AN21 does not take bookings, payments or conclude binding agreements through this website; the terms of any engagement, including full company details, are set out individually in the service agreement signed directly with the client. For any question, please contact office@an21.homes",
         },
         {
           heading: "Contact",
-          body: "Artem, CEO, AV Maisonnier — +39 329 664 85 63 — contact@avmaisonnier.com",
+          body: "Artem, CEO, AN21 — +39 329 664 85 63 — office@an21.homes",
         },
         {
           heading: "Hosting",
@@ -528,11 +530,11 @@ const en = {
         },
         {
           heading: "Intellectual property",
-          body: "The texts, images and overall design of this website are the property of AV Maisonnier and may not be reproduced without prior written consent",
+          body: "The texts, images and overall design of this website are the property of AN21 and may not be reproduced without prior written consent",
         },
         {
           heading: "Scope of services",
-          body: "AV Maisonnier coordinates qualified third-party providers, including contractors, service specialists and, where relevant, security or recruitment partners. AV Maisonnier does not provide legal, security, medical or financial services, and does not guarantee the security of any property. Household staff, where applicable, remain engaged through the owner or through the relevant partner agency unless separately agreed in writing",
+          body: "AN21 coordinates qualified third-party providers, including contractors, service specialists and, where relevant, security or recruitment partners. AN21 does not provide legal, security, medical or financial services, and does not guarantee the security of any property. Household staff, where applicable, remain engaged through the owner or through the relevant partner agency unless separately agreed in writing",
         },
       ],
     },

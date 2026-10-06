@@ -49,8 +49,8 @@ export default function Footer({
           <p className="eyebrow text-bronze-light">{dict.footer.contactTitle}</p>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
-              <a href="mailto:contact@avmaisonnier.com" className="hover:text-bronze-light transition-colors">
-                contact@avmaisonnier.com
+              <a href="mailto:office@an21.homes" className="hover:text-bronze-light transition-colors">
+                office@an21.homes
               </a>
             </li>
             <li>

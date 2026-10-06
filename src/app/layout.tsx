@@ -5,7 +5,7 @@ import { siteUrl } from "@/i18n/config";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "AV Maisonnier — Private Villa Management",
+    default: "AN21 — Private Villa Management",
     template: "%s",
   },
   icons: {

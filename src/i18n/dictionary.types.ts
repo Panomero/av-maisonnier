@@ -53,6 +53,7 @@ export interface Dictionary {
       brandLine1: string;
       brandLine2: string;
       descriptor: string;
+      tagline: string;
       title: string;
       subtitle: string;
       primaryCta: string;
@@ -88,6 +89,7 @@ export interface Dictionary {
       cta: string;
     };
     closing: {
+      kicker: string;
       title: string;
       body: string;
       cta: string;

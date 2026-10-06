@@ -88,9 +88,9 @@ export default function Header({
               }
             }}
           >
-            <span className="block text-xl">AV</span>
+            <span className="block text-xl">AN21</span>
             <span className="block text-[0.65rem] tracking-[0.3em] text-charcoal/70 -mt-0.5">
-              MAISONNIER
+              PRIVATE OFFICE
             </span>
           </Link>
 

@@ -41,6 +41,7 @@ export default async function HomePage({
             </p>
             <div className="w-14 h-px bg-bronze my-5" />
             <p className="eyebrow">{h.hero.descriptor}</p>
+            <p className="mt-3 font-serif-display italic text-xl text-bronze">{h.hero.tagline}</p>
           </Reveal>
 
           <Reveal delay={120} className="mt-10 max-w-2xl">
@@ -157,6 +158,7 @@ export default async function HomePage({
         <SceneBackdrop variant="dusk" />
         <div className="container-page text-offwhite text-center max-w-2xl mx-auto">
           <Reveal>
+            <p className="font-serif-display italic text-xl text-bronze-light mb-4">{h.closing.kicker}</p>
             <h2 className="font-serif-display text-3xl sm:text-4xl">{h.closing.title}</h2>
             <p className="mt-5 text-offwhite/85">{h.closing.body}</p>
             <div className="mt-10 flex justify-center">

@@ -1,4 +1,4 @@
-# AV Maisonnier — Website
+# AN21 — Website
 
 Private Villa Management. A trilingual (EN / RU / FR) marketing site built with Next.js
 (App Router), TypeScript and Tailwind CSS, with a working, server-processed contact form.
@@ -35,34 +35,34 @@ your browser's language.
 
 `npm run build` produces a production build; `npm run start` serves it.
 
-## 2. Connect the domain (avmaisonnier.com)
+## 2. Connect the domain (an21.homes)
 
 1. Buy the domain from any registrar (e.g. Namecheap, GoDaddy, Cloudflare Registrar,
    OVH) if you don't already own it.
 2. Deploy the project first (see step 5) so you have a `*.vercel.app` URL.
-3. In your Vercel project, go to **Settings → Domains**, add `avmaisonnier.com` and
-   `www.avmaisonnier.com`.
+3. In your Vercel project, go to **Settings → Domains**, add `an21.homes` and
+   `www.an21.homes`.
 4. Vercel will show you DNS records (usually an `A` record for the root domain and a
    `CNAME` for `www`). Add those records at your registrar's DNS panel.
 5. DNS changes can take a few minutes to 24 hours to propagate.
 
-## 3. Set up contact@avmaisonnier.com and the sending domain
+## 3. Set up office@an21.homes and the sending domain
 
 The form emails you via **Resend** (resend.com), which needs a verified sending
 domain (not necessarily your inbox provider — you can keep Gmail/Google Workspace
 for your actual mailbox and only use Resend to *send* the notification emails).
 
 1. Create your real mailbox first: sign up for Google Workspace, Zoho Mail, or your
-   registrar's email hosting, and create `contact@avmaisonnier.com`. This is the
+   registrar's email hosting, and create `office@an21.homes`. This is the
    inbox that receives enquiries.
 2. Create a free Resend account at https://resend.com.
-3. In Resend, go to **Domains → Add Domain**, enter `avmaisonnier.com`, and add the
+3. In Resend, go to **Domains → Add Domain**, enter `an21.homes`, and add the
    DNS records it gives you (SPF, DKIM, and optionally DMARC) at your registrar.
 4. Once the domain shows "Verified" in Resend, go to **API Keys** and create a key.
 5. Put that key in `.env.local` (locally) and in your hosting provider's environment
    variables (in production) as `RESEND_API_KEY`.
-6. Set `CONTACT_EMAIL=contact@avmaisonnier.com` (where enquiries are delivered) and
-   `CONTACT_FROM_EMAIL=website@avmaisonnier.com` (the sending address; can be any
+6. Set `CONTACT_EMAIL=office@an21.homes` (where enquiries are delivered) and
+   `CONTACT_FROM_EMAIL=website@an21.homes` (the sending address; can be any
    address on the verified domain, it does not need its own mailbox).
 
 Without `RESEND_API_KEY` set, the form will show the localized error message and log
@@ -162,7 +162,7 @@ building on a machine/CI with normal internet access.
 - [ ] Confirm phone and email links are tappable on mobile.
 - [ ] Run a Lighthouse pass (Performance / Accessibility / SEO) once real images are
       in place.
-- [ ] Point `avmaisonnier.com` DNS at the deployment and confirm HTTPS is active.
+- [ ] Point `an21.homes` DNS at the deployment and confirm HTTPS is active.
 - [ ] Update `siteUrl` in `src/i18n/config.ts` if the final domain differs.
 
 ## Project structure

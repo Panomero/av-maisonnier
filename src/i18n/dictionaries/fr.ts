@@ -3,7 +3,7 @@ import type { Dictionary } from "../dictionary.types";
 const fr = {
   htmlLang: "fr",
   meta: {
-    siteName: "AV Maisonnier",
+    siteName: "AN21",
     descriptor: "Gestion de villas privées",
   },
   nav: {
@@ -46,27 +46,28 @@ const fr = {
   },
   home: {
     seo: {
-      title: "AV Maisonnier — Gestion de villas privées, Côte d'Azur",
+      title: "AN21 — Gestion de villas privées, Côte d'Azur",
       description:
-        "AV Maisonnier est l'interlocuteur unique et de confiance des propriétaires de villas privées sur la Côte d'Azur, coordonnant la propriété, le personnel, les prestataires et les besoins quotidiens",
-      ogTitle: "AV Maisonnier — Gestion de villas privées",
+        "AN21 est l'interlocuteur unique et de confiance des propriétaires de villas privées sur la Côte d'Azur, coordonnant la propriété, le personnel, les prestataires et les besoins quotidiens",
+      ogTitle: "AN21 — Gestion de villas privées",
       ogDescription:
         "Un interlocuteur unique et de confiance pour votre villa. Coordination de la propriété, du personnel et des prestataires sur la Côte d'Azur",
     },
     hero: {
-      brandLine1: "AV",
-      brandLine2: "MAISONNIER",
+      brandLine1: "AN21",
+      brandLine2: "PRIVATE OFFICE",
       descriptor: "GESTION DE VILLAS PRIVÉES",
+      tagline: "L'opérateur de votre confort",
       title: "Un interlocuteur unique et de confiance pour votre villa",
       subtitle:
-        "AV Maisonnier coordonne la propriété, le personnel, les prestataires et les besoins quotidiens des résidences privées de la Côte d'Azur",
+        "AN21 coordonne la propriété, le personnel, les prestataires et les besoins quotidiens des résidences privées de la Côte d'Azur",
       primaryCta: "Demander une consultation privée",
       secondaryCta: "Découvrir nos prestations",
     },
     idea: {
       eyebrow: "Notre conviction",
       title: "Votre maison doit fonctionner parfaitement, même en votre absence",
-      body: "Une villa privée exige une coordination constante. Personnel, prestataires, entretien, approvisionnement et préparation doivent fonctionner comme un système unique. AV Maisonnier devient votre interlocuteur unique et de confiance, et prend en charge la coordination du fonctionnement quotidien de la résidence. Le travail ne s'arrête pas au départ du propriétaire : inspections, échanges avec les prestataires et le personnel, suivi de la propriété se poursuivent en continu, que vous soyez présent ou non",
+      body: "Une villa privée exige une coordination constante. Personnel, prestataires, entretien, approvisionnement et préparation doivent fonctionner comme un système unique. AN21 devient votre interlocuteur unique et de confiance, et prend en charge la coordination du fonctionnement quotidien de la résidence. Le travail ne s'arrête pas au départ du propriétaire : inspections, échanges avec les prestataires et le personnel, suivi de la propriété se poursuivent en continu, que vous soyez présent ou non",
       statement: "Un seul interlocuteur. Une seule chaîne de responsabilité",
     },
     coreServices: {
@@ -116,10 +117,11 @@ const fr = {
     agenciesBlock: {
       eyebrow: "Pour les agences partenaires",
       title: "Un nouveau service intégré à l'offre de votre agence",
-      body: "AV Maisonnier permet aux agences de recrutement de proposer une gestion de villa à long terme sans avoir à créer un département opérationnel interne. Votre agence conserve son rôle de partenaire de confiance pour le recrutement. Toute nouvelle demande de recrutement est systématiquement réorientée vers l'agence partenaire",
+      body: "AN21 permet aux agences de recrutement de proposer une gestion de villa à long terme sans avoir à créer un département opérationnel interne. Votre agence conserve son rôle de partenaire de confiance pour le recrutement. Toute nouvelle demande de recrutement est systématiquement réorientée vers l'agence partenaire",
       cta: "Découvrir le partenariat agences",
     },
     closing: {
+      kicker: "Plus de temps pour l'essentiel",
       title: "Chaque résidence appelle un niveau d'attention différent",
       body: "Notre service est conçu autour de la propriété, du foyer et des attentes du propriétaire",
       cta: "Organiser un échange confidentiel",
@@ -127,17 +129,17 @@ const fr = {
   },
   owners: {
     seo: {
-      title: "Propriétaires — gestion de villas privées | AV Maisonnier",
+      title: "Propriétaires — gestion de villas privées | AN21",
       description:
-        "Une gestion de villa privée pensée autour du propriétaire. AV Maisonnier coordonne les personnes, les processus et les prestataires nécessaires au bon fonctionnement de la résidence",
-      ogTitle: "Propriétaires | AV Maisonnier",
+        "Une gestion de villa privée pensée autour du propriétaire. AN21 coordonne les personnes, les processus et les prestataires nécessaires au bon fonctionnement de la résidence",
+      ogTitle: "Propriétaires | AN21",
       ogDescription:
         "Un interlocuteur unique et de confiance pour votre villa, avant, pendant et après chaque séjour",
     },
     hero: {
       title: "Une gestion de villa privée pensée autour du propriétaire",
       subtitle:
-        "AV Maisonnier coordonne les personnes, les processus et les prestataires nécessaires pour que la résidence reste préparée, protégée et parfaitement fonctionnelle",
+        "AN21 coordonne les personnes, les processus et les prestataires nécessaires pour que la résidence reste préparée, protégée et parfaitement fonctionnelle",
     },
     sections: [
       {
@@ -197,10 +199,10 @@ const fr = {
   },
   services: {
     seo: {
-      title: "Prestations — propriété, personnel et lifestyle | AV Maisonnier",
+      title: "Prestations — propriété, personnel et lifestyle | AN21",
       description:
         "Un système coordonné pour la résidence, le foyer et le mode de vie : gestion de propriété, coordination du personnel et accompagnement lifestyle pour les villas privées de la Côte d'Azur",
-      ogTitle: "Prestations | AV Maisonnier",
+      ogTitle: "Prestations | AN21",
       ogDescription:
         "Gestion de propriété, coordination du personnel et accompagnement lifestyle, réunis en un seul service",
     },
@@ -259,21 +261,21 @@ const fr = {
   },
   agencies: {
     seo: {
-      title: "Agences — partenariat de gestion de villas | AV Maisonnier",
+      title: "Agences — partenariat de gestion de villas | AN21",
       description:
-        "AV Maisonnier aide les agences de recrutement à prolonger la relation client au-delà du placement, grâce à une gestion de villa à long terme qui préserve leur rôle de partenaire de confiance",
-      ogTitle: "Agences | AV Maisonnier",
+        "AN21 aide les agences de recrutement à prolonger la relation client au-delà du placement, grâce à une gestion de villa à long terme qui préserve leur rôle de partenaire de confiance",
+      ogTitle: "Agences | AN21",
       ogDescription:
         "Prolonger la relation client au-delà du placement, sans créer de département opérationnel",
     },
     hero: {
       title: "Prolongez la relation client au-delà du placement",
       subtitle:
-        "AV Maisonnier aide les agences de recrutement à proposer une gestion de villa continue, tout en conservant leur rôle de partenaire de confiance pour le recrutement",
+        "AN21 aide les agences de recrutement à proposer une gestion de villa continue, tout en conservant leur rôle de partenaire de confiance pour le recrutement",
     },
     opportunity: {
       title: "L'opportunité",
-      body: "Après un placement réussi, le propriétaire continue d'avoir besoin d'un accompagnement pour la propriété, l'équipe de maison, les prestataires et le quotidien. AV Maisonnier permet à l'agence de rester connectée au client grâce à une offre de services élargie et durable. Un nouveau service intégré à l'offre de votre agence",
+      body: "Après un placement réussi, le propriétaire continue d'avoir besoin d'un accompagnement pour la propriété, l'équipe de maison, les prestataires et le quotidien. AN21 permet à l'agence de rester connectée au client grâce à une offre de services élargie et durable. Un nouveau service intégré à l'offre de votre agence",
       items: [
         "Une offre client élargie",
         "Des relations de long terme renforcées",
@@ -294,7 +296,7 @@ const fr = {
         "Conseil en recrutement",
         "Relation continue en matière de personnel",
       ],
-      avTitle: "AV Maisonnier",
+      avTitle: "AN21",
       avItems: [
         "Gestion opérationnelle de la propriété",
         "Coordination du personnel en place",
@@ -310,10 +312,10 @@ const fr = {
     partnership: {
       title: "Comment fonctionne le partenariat",
       steps: [
-        "L'agence présente AV Maisonnier à un client concerné",
+        "L'agence présente AN21 à un client concerné",
         "Nous organisons une consultation privée avec le propriétaire",
         "Une étendue de service sur mesure est préparée",
-        "AV Maisonnier gère le fonctionnement continu de la résidence",
+        "AN21 gère le fonctionnement continu de la résidence",
         "Les nouvelles demandes de recrutement sont transmises à l'agence partenaire",
         "Les conditions du partenariat sont convenues individuellement",
       ],
@@ -334,10 +336,10 @@ const fr = {
   },
   howItWorks: {
     seo: {
-      title: "Notre approche — un processus de gestion clair | AV Maisonnier",
+      title: "Notre approche — un processus de gestion clair | AN21",
       description:
-        "De la consultation privée à la coordination continue et aux comptes rendus : comment AV Maisonnier structure la gestion des villas privées sur la Côte d'Azur",
-      ogTitle: "Notre approche | AV Maisonnier",
+        "De la consultation privée à la coordination continue et aux comptes rendus : comment AN21 structure la gestion des villas privées sur la Côte d'Azur",
+      ogTitle: "Notre approche | AN21",
       ogDescription: "Un processus de gestion clair et discret, étape par étape",
     },
     hero: { title: "Un processus de gestion clair et discret" },
@@ -388,16 +390,16 @@ const fr = {
   },
   about: {
     seo: {
-      title: "À propos | AV Maisonnier",
+      title: "À propos | AN21",
       description:
-        "AV Maisonnier a été créé pour offrir aux propriétaires de résidences privées de la Côte d'Azur un interlocuteur unique et de confiance pour la gestion quotidienne de leur propriété",
-      ogTitle: "À propos | AV Maisonnier",
+        "AN21 a été créé pour offrir aux propriétaires de résidences privées de la Côte d'Azur un interlocuteur unique et de confiance pour la gestion quotidienne de leur propriété",
+      ogTitle: "À propos | AN21",
       ogDescription:
         "Une approche de gestion privée fondée sur la confiance et la responsabilité",
     },
     hero: { title: "Une approche de gestion privée fondée sur la confiance et la responsabilité" },
     intro: [
-      "AV Maisonnier a été créé pour offrir aux propriétaires de résidences privées un interlocuteur unique et de confiance pour la gestion quotidienne de leur propriété",
+      "AN21 a été créé pour offrir aux propriétaires de résidences privées un interlocuteur unique et de confiance pour la gestion quotidienne de leur propriété",
       "Le service associe une gestion de propriété structurée, une coordination du personnel et un accompagnement personnel, dans un format discret et hautement individualisé",
       "Notre rôle n'est pas de remplacer les prestataires spécialisés, les prestataires de sécurité ou les agences de recrutement, mais de coordonner leur intervention dans l'intérêt du propriétaire",
     ],
@@ -406,14 +408,14 @@ const fr = {
       items: ["Discrétion", "Responsabilité", "Clarté", "Continuité", "Attention personnelle"],
     },
     geography: "Au service des résidences privées sur l'ensemble de la Côte d'Azur",
-    role: "AV Maisonnier coordonne des prestataires tiers qualifiés et supervise l'étendue de mission convenue",
+    role: "AN21 coordonne des prestataires tiers qualifiés et supervise l'étendue de mission convenue",
   },
   contact: {
     seo: {
-      title: "Contact — consultation privée | AV Maisonnier",
+      title: "Contact — consultation privée | AN21",
       description:
-        "Entamez un échange confidentiel avec AV Maisonnier au sujet de votre résidence, de vos besoins actuels ou d'un partenariat que vous souhaiteriez explorer",
-      ogTitle: "Contact | AV Maisonnier",
+        "Entamez un échange confidentiel avec AN21 au sujet de votre résidence, de vos besoins actuels ou d'un partenariat que vous souhaiteriez explorer",
+      ogTitle: "Contact | AN21",
       ogDescription: "Un échange confidentiel est la première étape",
     },
     hero: {
@@ -446,14 +448,14 @@ const fr = {
       successBody: "Votre demande a bien été reçue. Nous vous contacterons de manière confidentielle",
       errorTitle: "Un problème est survenu",
       errorBody:
-        "Nous n'avons pas pu envoyer votre demande. Merci de réessayer, ou écrivez-nous directement à contact@avmaisonnier.com",
+        "Nous n'avons pas pu envoyer votre demande. Merci de réessayer, ou écrivez-nous directement à office@an21.homes",
       honeypotLabel: "Laissez ce champ vide",
     },
     details: {
       name: "Artem",
-      title: "CEO, AV Maisonnier",
+      title: "CEO, AN21",
       phone: "+39 329 664 85 63",
-      email: "contact@avmaisonnier.com",
+      email: "office@an21.homes",
       availability: "Côte d'Azur · Sur rendez-vous",
     },
   },
@@ -464,7 +466,7 @@ const fr = {
       sections: [
         {
           heading: "Qui sommes-nous",
-          body: "Ce site a une vocation purement informative et ne permet ni réservation, ni paiement, ni conclusion d'engagement contractuel. Pour toute question relative à cette Politique de confidentialité ou au traitement de vos données, contactez contact@avmaisonnier.com",
+          body: "Ce site a une vocation purement informative et ne permet ni réservation, ni paiement, ni conclusion d'engagement contractuel. Pour toute question relative à cette Politique de confidentialité ou au traitement de vos données, contactez office@an21.homes",
         },
         {
           heading: "Informations que nous collectons",
@@ -480,11 +482,11 @@ const fr = {
         },
         {
           heading: "Vos droits",
-          body: "Selon votre juridiction, vous pouvez disposer d'un droit d'accès, de rectification, d'effacement ou de limitation de l'utilisation de vos données personnelles, ainsi que d'un droit d'opposition à leur traitement. Pour exercer ces droits, contactez-nous à contact@avmaisonnier.com",
+          body: "Selon votre juridiction, vous pouvez disposer d'un droit d'accès, de rectification, d'effacement ou de limitation de l'utilisation de vos données personnelles, ainsi que d'un droit d'opposition à leur traitement. Pour exercer ces droits, contactez-nous à office@an21.homes",
         },
         {
           heading: "Contact",
-          body: "Toute question relative à cette Politique de confidentialité peut être adressée à contact@avmaisonnier.com",
+          body: "Toute question relative à cette Politique de confidentialité peut être adressée à office@an21.homes",
         },
       ],
     },
@@ -516,11 +518,11 @@ const fr = {
       sections: [
         {
           heading: "Éditeur du site",
-          body: "Ce site a une vocation purement informative et présente le service de gestion de villas privées d'AV Maisonnier. Il est publié sous le nom AV Maisonnier. AV Maisonnier ne prend aucune réservation, aucun paiement et ne conclut aucun engagement contractuel via ce site ; les conditions de toute collaboration, y compris les coordonnées complètes de la société, sont précisées individuellement dans le contrat de service signé directement avec le client. Pour toute question, contactez contact@avmaisonnier.com",
+          body: "Ce site a une vocation purement informative et présente le service de gestion de villas privées d'AN21. Il est publié sous le nom AN21. AN21 ne prend aucune réservation, aucun paiement et ne conclut aucun engagement contractuel via ce site ; les conditions de toute collaboration, y compris les coordonnées complètes de la société, sont précisées individuellement dans le contrat de service signé directement avec le client. Pour toute question, contactez office@an21.homes",
         },
         {
           heading: "Contact",
-          body: "Artem, CEO, AV Maisonnier — +39 329 664 85 63 — contact@avmaisonnier.com",
+          body: "Artem, CEO, AN21 — +39 329 664 85 63 — office@an21.homes",
         },
         {
           heading: "Hébergement",
@@ -528,11 +530,11 @@ const fr = {
         },
         {
           heading: "Propriété intellectuelle",
-          body: "Les textes, images et l'ensemble du design de ce site sont la propriété d'AV Maisonnier et ne peuvent être reproduits sans accord écrit préalable",
+          body: "Les textes, images et l'ensemble du design de ce site sont la propriété d'AN21 et ne peuvent être reproduits sans accord écrit préalable",
         },
         {
           heading: "Étendue des prestations",
-          body: "AV Maisonnier coordonne des prestataires tiers qualifiés, notamment des entreprises, des spécialistes et, le cas échéant, des partenaires en sécurité ou en recrutement. AV Maisonnier ne fournit pas de prestations juridiques, de sécurité, médicales ou financières, et ne garantit pas la sécurité d'une propriété. Le personnel de maison, le cas échéant, demeure engagé par le propriétaire ou par l'agence partenaire concernée, sauf accord écrit distinct",
+          body: "AN21 coordonne des prestataires tiers qualifiés, notamment des entreprises, des spécialistes et, le cas échéant, des partenaires en sécurité ou en recrutement. AN21 ne fournit pas de prestations juridiques, de sécurité, médicales ou financières, et ne garantit pas la sécurité d'une propriété. Le personnel de maison, le cas échéant, demeure engagé par le propriétaire ou par l'agence partenaire concernée, sauf accord écrit distinct",
         },
       ],
     },

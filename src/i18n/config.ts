@@ -14,7 +14,7 @@ export const localeFullNames: Record<Locale, string> = {
   fr: "Français",
 };
 
-export const siteUrl = "https://avmaisonnier.com";
+export const siteUrl = "https://an21.homes";
 
 export function isLocale(value: string): value is Locale {
   return (locales as readonly string[]).includes(value);

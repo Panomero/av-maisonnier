@@ -25,13 +25,13 @@ function row(label: string, value: string): string {
 
 export function buildNotificationEmail(payload: ContactPayload) {
   const subjectLine = payload.subject
-    ? `AV Maisonnier — Enquiry: ${payload.subject}`
-    : `AV Maisonnier — New enquiry from ${payload.fullName}`;
+    ? `AN21 — Enquiry: ${payload.subject}`
+    : `AN21 — New enquiry from ${payload.fullName}`;
 
   const html = `
   <div style="font-family:Georgia,'Times New Roman',serif;background:#f7f3ec;padding:32px;">
     <div style="max-width:560px;margin:0 auto;background:#ffffff;border:1px solid #e4ddd0;padding:32px;">
-      <p style="letter-spacing:0.2em;text-transform:uppercase;font-size:11px;color:#a9865c;margin:0 0 4px;">AV Maisonnier</p>
+      <p style="letter-spacing:0.2em;text-transform:uppercase;font-size:11px;color:#a9865c;margin:0 0 4px;">AN21</p>
       <h1 style="font-size:20px;margin:0 0 20px;color:#22201d;">New website enquiry</h1>
       <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
         ${row("Name", payload.fullName)}
@@ -62,22 +62,22 @@ const confirmationCopy: Record<
   { subject: string; greeting: (name: string) => string; body: string; signOff: string }
 > = {
   en: {
-    subject: "Your enquiry to AV Maisonnier",
+    subject: "Your enquiry to AN21",
     greeting: (name) => `Dear ${name},`,
     body: "Thank you. Your enquiry has been received. We will contact you privately.",
-    signOff: "Artem\nCEO, AV Maisonnier\n+39 329 664 85 63\ncontact@avmaisonnier.com",
+    signOff: "Artem\nCEO, AN21\n+39 329 664 85 63\noffice@an21.homes",
   },
   ru: {
-    subject: "Ваш запрос в AV Maisonnier",
+    subject: "Ваш запрос в AN21",
     greeting: (name) => `Уважаем(ая) ${name},`,
     body: "Спасибо. Ваш запрос получен. Мы свяжемся с вами конфиденциально.",
-    signOff: "Artem\nCEO, AV Maisonnier\n+39 329 664 85 63\ncontact@avmaisonnier.com",
+    signOff: "Artem\nCEO, AN21\n+39 329 664 85 63\noffice@an21.homes",
   },
   fr: {
-    subject: "Votre demande auprès d'AV Maisonnier",
+    subject: "Votre demande auprès d'AN21",
     greeting: (name) => `Cher/Chère ${name},`,
     body: "Merci. Votre demande a bien été reçue. Nous vous contacterons de manière confidentielle.",
-    signOff: "Artem\nCEO, AV Maisonnier\n+39 329 664 85 63\ncontact@avmaisonnier.com",
+    signOff: "Artem\nCEO, AN21\n+39 329 664 85 63\noffice@an21.homes",
   },
 };
 
@@ -91,7 +91,7 @@ export function buildConfirmationEmail(payload: ContactPayload) {
   const html = `
   <div style="font-family:Georgia,'Times New Roman',serif;background:#f7f3ec;padding:32px;">
     <div style="max-width:520px;margin:0 auto;background:#ffffff;border:1px solid #e4ddd0;padding:32px;">
-      <p style="letter-spacing:0.2em;text-transform:uppercase;font-size:11px;color:#a9865c;margin:0 0 4px;">AV Maisonnier</p>
+      <p style="letter-spacing:0.2em;text-transform:uppercase;font-size:11px;color:#a9865c;margin:0 0 4px;">AN21</p>
       <p style="font-size:15px;color:#22201d;">${escapeHtml(copy.greeting(payload.fullName))}</p>
       <p style="font-size:15px;color:#22201d;line-height:1.6;">${escapeHtml(copy.body)}</p>
       <p style="font-size:13px;color:#6b6558;white-space:pre-line;margin-top:28px;">${escapeHtml(

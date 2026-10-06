@@ -31,7 +31,7 @@ export function buildMetadata(locale: Locale, slug: string, seo: SeoBlock): Meta
       title: seo.ogTitle,
       description: seo.ogDescription,
       url: canonical,
-      siteName: "AV Maisonnier",
+      siteName: "AN21",
       locale,
       type: "website",
     },
