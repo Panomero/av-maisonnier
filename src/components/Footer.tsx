@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Dictionary } from "@/i18n/dictionary.types";
 import type { Locale } from "@/i18n/config";
 
@@ -24,8 +25,8 @@ export default function Footer({
     <footer className="bg-navy text-offwhite/90 mt-24">
       <div className="container-page py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
-          <p className="font-serif-display text-2xl">{dict.meta.siteName}</p>
-          <p className="mt-1 text-xs tracking-[0.2em] uppercase text-bronze-light">
+          <Image src="/logo.png" alt={dict.meta.siteName} width={1000} height={396} className="h-16 w-auto" />
+          <p className="mt-3 text-xs tracking-[0.2em] uppercase text-bronze-light">
             {dict.meta.descriptor}
           </p>
           <p className="mt-6 max-w-sm text-sm text-offwhite/70">{dict.footer.tagline}</p>
