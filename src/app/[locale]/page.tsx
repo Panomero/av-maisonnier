@@ -3,7 +3,7 @@ import { isLocale, defaultLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
 import { buildMetadata } from "@/lib/seo";
 import Reveal from "@/components/Reveal";
-import { Eyebrow, ItemList, PrimaryLink, SecondaryLink, SceneBackdrop } from "@/components/ui";
+import { Eyebrow, ItemList, Photo, PrimaryLink, SecondaryLink, SceneBackdrop } from "@/components/ui";
 
 export async function generateMetadata({
   params,
@@ -29,68 +29,90 @@ export default async function HomePage({
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden min-h-[92vh] flex items-end">
-        <SceneBackdrop variant="coast" />
-        <div className="container-page pb-20 pt-40 w-full">
-          <Reveal>
-            <p className="font-serif-display text-4xl sm:text-5xl leading-none tracking-wide">
-              {h.hero.brandLine1}
-            </p>
-            <p className="font-serif-display text-3xl sm:text-4xl tracking-[0.18em] mt-1">
-              {h.hero.brandLine2}
-            </p>
-            <div className="w-14 h-px bg-bronze my-5" />
+      <section className="border-b border-line">
+        <div className="container-page grid items-center gap-10 py-12 lg:min-h-[78vh] lg:grid-cols-2 lg:gap-16 lg:py-0">
+          <Reveal className="lg:py-24">
             <p className="eyebrow">{h.hero.descriptor}</p>
-            <p className="mt-3 font-serif-display italic text-xl text-bronze">{h.hero.tagline}</p>
-          </Reveal>
-
-          <Reveal delay={120} className="mt-10 max-w-2xl">
-            <h1 className="font-serif-display text-3xl sm:text-4xl lg:text-5xl leading-tight text-charcoal">
+            <h1 className="font-serif-display mt-6 text-4xl leading-[1.1] sm:text-5xl lg:text-6xl">
               {h.hero.title}
             </h1>
-            <p className="mt-5 text-lg text-charcoal/80 max-w-xl">{h.hero.subtitle}</p>
+            <p className="mt-8 border-l border-bronze pl-6 text-xl leading-snug text-charcoal sm:text-2xl">
+              {h.hero.tagline}
+            </p>
+            <p className="mt-8 max-w-md text-charcoal/75 leading-relaxed">{h.hero.subtitle}</p>
+            <div className="mt-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-10">
+              <PrimaryLink href={`/${locale}/contact`}>{h.hero.primaryCta}</PrimaryLink>
+              <SecondaryLink href={`/${locale}/services`}>{h.hero.secondaryCta}</SecondaryLink>
+            </div>
+          </Reveal>
+          <Reveal delay={120}>
+            <Photo
+              src="/images/hero.jpg"
+              fallbackSrc="https://images.unsplash.com/photo-1715626783492-a23d191091d5?auto=format&fit=crop&w=1400&q=80"
+              className="aspect-[4/5] w-full lg:aspect-auto lg:h-[78vh]"
+            />
+          </Reveal>
+        </div>
+      </section>
+
+      <div className="border-b border-line">
+        <div className="container-page flex items-center gap-6 py-4 text-[0.7rem] tracking-[0.26em] uppercase text-bronze">
+          <span>
+            {h.hero.brandLine1} / {h.hero.brandLine2}
+          </span>
+          <span aria-hidden className="h-px flex-1 bg-line" />
+          <span className="text-right">{dict.footer.location.split("·")[0].trim()}</span>
+        </div>
+      </div>
+
+      {/* Core Services */}
+      <section className="bg-navy text-offwhite py-20 sm:py-28">
+        <div className="container-page">
+          <Reveal className="max-w-2xl">
+            <Eyebrow>{h.coreServices.eyebrow}</Eyebrow>
+            <h2 className="font-serif-display mt-4 text-3xl sm:text-4xl">{h.coreServices.title}</h2>
           </Reveal>
 
-          <Reveal delay={220} className="mt-10 flex flex-col sm:flex-row gap-5 sm:items-center">
-            <PrimaryLink href={`/${locale}/contact`}>{h.hero.primaryCta}</PrimaryLink>
-            <SecondaryLink href={`/${locale}/services`}>{h.hero.secondaryCta}</SecondaryLink>
+          <div className="mt-14 grid md:grid-cols-3 md:divide-x md:divide-line-dark">
+            {h.coreServices.items.map((item, index) => (
+              <Reveal
+                key={item.title}
+                delay={index * 100}
+                className="border-t border-line-dark py-8 md:border-t-0 md:px-8 md:first:pl-0 md:last:pr-0"
+              >
+                <span className="text-sm tracking-[0.2em] text-bronze-light">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3 className="font-serif-display mt-4 text-2xl">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-offwhite/75">{item.body}</p>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal delay={300} className="mt-10 border-t border-line-dark pt-8">
+            <SecondaryLink href={`/${locale}/services`} tone="dark">
+              {h.coreServices.cta}
+            </SecondaryLink>
           </Reveal>
         </div>
       </section>
 
       {/* The Idea */}
-      <section className="container-page py-24 sm:py-32">
-        <Reveal className="max-w-2xl">
+      <section className="container-page grid items-center gap-12 py-20 sm:py-28 lg:grid-cols-[1.1fr,0.9fr] lg:gap-20">
+        <Reveal>
           <Eyebrow>{h.idea.eyebrow}</Eyebrow>
-          <h2 className="font-serif-display text-3xl sm:text-4xl mt-3 leading-tight">
+          <h2 className="font-serif-display mt-4 text-3xl leading-tight sm:text-4xl">
             {h.idea.title}
           </h2>
-          <p className="mt-6 text-charcoal/80 leading-relaxed">{h.idea.body}</p>
-          <p className="mt-8 font-serif-display italic text-xl text-bronze">{h.idea.statement}</p>
+          <p className="mt-6 leading-relaxed text-charcoal/80">{h.idea.body}</p>
+          <p className="mt-8 border-l border-bronze pl-6 text-xl text-bronze">{h.idea.statement}</p>
         </Reveal>
-      </section>
-
-      {/* Core Services */}
-      <section className="bg-ivory py-24 sm:py-32">
-        <div className="container-page">
-          <Reveal className="max-w-2xl">
-            <Eyebrow>{h.coreServices.eyebrow}</Eyebrow>
-            <h2 className="font-serif-display text-3xl sm:text-4xl mt-3">{h.coreServices.title}</h2>
-          </Reveal>
-
-          <div className="mt-14 grid gap-10 md:grid-cols-3">
-            {h.coreServices.items.map((item, index) => (
-              <Reveal key={item.title} delay={index * 100} className="border-t border-line pt-6">
-                <h3 className="font-serif-display text-xl">{item.title}</h3>
-                <p className="mt-3 text-sm text-charcoal/75 leading-relaxed">{item.body}</p>
-              </Reveal>
-            ))}
-          </div>
-
-          <Reveal delay={300} className="mt-14">
-            <SecondaryLink href={`/${locale}/services`}>{h.coreServices.cta}</SecondaryLink>
-          </Reveal>
-        </div>
+        <Reveal delay={120}>
+          <Photo
+            src="/images/detail.jpg"
+            fallbackSrc="https://images.unsplash.com/photo-1587615139139-f3a245a63372?auto=format&fit=crop&w=1400&q=80"
+            className="aspect-[4/3] w-full" />
+        </Reveal>
       </section>
 
       {/* Owner Experience */}

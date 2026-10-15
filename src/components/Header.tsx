@@ -67,7 +67,7 @@ export default function Header({
         of the viewport. Keeping <header> filter-free fixes it.
       */}
       <div
-        className="bg-navy border-b border-line-dark"
+        className="bg-offwhite/95 backdrop-blur border-b border-line"
       >
         <div className="container-page flex h-20 items-center justify-between">
           <Link
@@ -86,12 +86,12 @@ export default function Header({
             }}
           >
             <Image
-              src="/logo.png"
+              src="/logo-bronze.png"
               alt={dict.meta.siteName}
               width={1000}
               height={396}
               priority
-              className="h-11 w-auto"
+              className="h-14 w-auto"
             />
           </Link>
 
@@ -104,7 +104,7 @@ export default function Header({
                 key={item.href}
                 href={item.href}
                 className={`transition-opacity hover:opacity-70 ${
-                  isActive(item.href) ? "text-bronze-light" : "text-offwhite"
+                  isActive(item.href) ? "text-bronze" : "text-charcoal"
                 }`}
                 aria-current={isActive(item.href) ? "page" : undefined}
               >
@@ -117,7 +117,7 @@ export default function Header({
             <LanguageSwitcher locale={locale} pathname={pathname ?? `/${locale}`} label={dict.nav.language} />
             <Link
               href={`/${locale}/contact`}
-              className="border border-offwhite/70 text-offwhite px-5 py-2.5 text-xs tracking-[0.14em] uppercase hover:bg-offwhite hover:text-navy transition-colors"
+              className="border border-charcoal/70 text-charcoal px-5 py-2.5 text-xs tracking-[0.14em] uppercase hover:bg-charcoal hover:text-offwhite transition-colors"
             >
               {dict.nav.consultation}
             </Link>
@@ -132,12 +132,12 @@ export default function Header({
             onClick={() => setOpen((v) => !v)}
           >
             <span
-              className={`block h-px w-6 bg-offwhite transition-transform ${
+              className={`block h-px w-6 bg-charcoal transition-transform ${
                 open ? "translate-y-[3px] rotate-45" : ""
               }`}
             />
             <span
-              className={`block h-px w-6 bg-offwhite transition-transform ${
+              className={`block h-px w-6 bg-charcoal transition-transform ${
                 open ? "-translate-y-[3px] -rotate-45" : ""
               }`}
             />
@@ -209,12 +209,12 @@ function LanguageSwitcher({
     <div className="flex items-center gap-1 text-xs tracking-widest" aria-label={label}>
       {locales.map((l, index) => (
         <span key={l} className="flex items-center">
-          {index > 0 && <span className="mx-1 text-offwhite/30">/</span>}
+          {index > 0 && <span className="mx-1 text-charcoal/30">/</span>}
           <Link
             href={withLocalePath(pathname, l)}
             hrefLang={l}
             className={
-              l === locale ? "text-bronze-light" : "text-offwhite/60 hover:text-offwhite"
+              l === locale ? "text-bronze" : "text-charcoal/60 hover:text-charcoal"
             }
           >
             {localeNames[l]}

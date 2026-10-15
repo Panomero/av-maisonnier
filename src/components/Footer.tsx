@@ -25,7 +25,7 @@ export default function Footer({
     <footer className="bg-navy text-offwhite/90 mt-24">
       <div className="container-page py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
-          <Image src="/logo.png" alt={dict.meta.siteName} width={1000} height={396} className="h-16 w-auto" />
+          <Image src="/logo-light.png" alt={dict.meta.siteName} width={1000} height={396} className="h-16 w-auto" />
           <p className="mt-3 text-xs tracking-[0.2em] uppercase text-bronze-light">
             {dict.meta.descriptor}
           </p>
@@ -55,8 +55,8 @@ export default function Footer({
               </a>
             </li>
             <li>
-              <a href="tel:+393296648563" className="hover:text-bronze-light transition-colors">
-                +39 329 664 85 63
+              <a href="tel:+33780752313" className="hover:text-bronze-light transition-colors">
+                +33 780 752 313
               </a>
             </li>
           </ul>

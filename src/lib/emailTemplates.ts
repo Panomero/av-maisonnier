@@ -65,19 +65,19 @@ const confirmationCopy: Record<
     subject: "Your enquiry to AN21",
     greeting: (name) => `Dear ${name},`,
     body: "Thank you. Your enquiry has been received. We will contact you privately.",
-    signOff: "Artem\nCEO, AN21\n+39 329 664 85 63\noffice@an21.homes",
+    signOff: "Artem\nCEO, AN21\n+33 780 752 313\noffice@an21.homes",
   },
   ru: {
     subject: "Ваш запрос в AN21",
     greeting: (name) => `Уважаем(ая) ${name},`,
     body: "Спасибо. Ваш запрос получен. Мы свяжемся с вами конфиденциально.",
-    signOff: "Artem\nCEO, AN21\n+39 329 664 85 63\noffice@an21.homes",
+    signOff: "Artem\nCEO, AN21\n+33 780 752 313\noffice@an21.homes",
   },
   fr: {
     subject: "Votre demande auprès d'AN21",
     greeting: (name) => `Cher/Chère ${name},`,
     body: "Merci. Votre demande a bien été reçue. Nous vous contacterons de manière confidentielle.",
-    signOff: "Artem\nCEO, AN21\n+39 329 664 85 63\noffice@an21.homes",
+    signOff: "Artem\nCEO, AN21\n+33 780 752 313\noffice@an21.homes",
   },
 };
 

@@ -454,7 +454,7 @@ const ru = {
     details: {
       name: "Artem",
       title: "CEO, AN21",
-      phone: "+39 329 664 85 63",
+      phone: "+33 780 752 313",
       email: "office@an21.homes",
       availability: "Французская Ривьера · По предварительной договорённости",
     },
@@ -522,7 +522,7 @@ const ru = {
         },
         {
           heading: "Контакты",
-          body: "Artem, CEO, AN21 — +39 329 664 85 63 — office@an21.homes",
+          body: "Artem, CEO, AN21 — +33 780 752 313 — office@an21.homes",
         },
         {
           heading: "Хостинг",
