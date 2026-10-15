@@ -1,3 +1,4 @@
+import "@fontsource-variable/jost";
 import type { Metadata } from "next";
 import "./globals.css";
 import { siteUrl } from "@/i18n/config";

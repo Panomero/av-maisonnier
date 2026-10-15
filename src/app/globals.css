@@ -12,13 +12,12 @@
   --color-line-dark: rgba(242, 236, 226, 0.2);
 
   /*
-   * Typography: a light, airy sans for headings and body, matching the
-   * refined editorial look. System stacks keep the build network-free;
-   * Avenir Next / Helvetica Neue ship with Apple devices, Segoe UI with
-   * Windows. Cyrillic falls back per-glyph to the next available face.
+   * Typography: Jost (self-hosted via @fontsource-variable/jost, Latin +
+   * Cyrillic) for headings and body, so every language renders in the
+   * same geometric sans on every device. System faces are fallbacks only.
    */
-  --font-serif: "Avenir Next", "Helvetica Neue", "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
-  --font-sans: "Avenir Next", "Helvetica Neue", "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+  --font-serif: "Jost Variable", "Avenir Next", "Helvetica Neue", "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+  --font-sans: "Jost Variable", "Avenir Next", "Helvetica Neue", "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
 }
 
 @theme inline {

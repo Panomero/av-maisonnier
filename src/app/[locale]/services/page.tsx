@@ -39,7 +39,7 @@ export default async function ServicesPage({
 
       <PhotoBand
         src="/images/services.jpg"
-        fallbackSrc="https://images.unsplash.com/photo-1588090272888?auto=format&fit=crop&w=1600&q=80"
+        fallbackSrc="https://images.unsplash.com/photo-1588090272888-033e92b141b1?auto=format&fit=crop&w=1600&q=80"
         className="pb-4 sm:pb-8"
       />
 

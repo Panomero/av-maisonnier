@@ -39,7 +39,7 @@ export default async function HowItWorksPage({
 
       <PhotoBand
         src="/images/process.jpg"
-        fallbackSrc="https://images.unsplash.com/photo-1587615139139?auto=format&fit=crop&w=1600&q=80"
+        fallbackSrc="https://images.unsplash.com/photo-1587615139139-f3a245a63372?auto=format&fit=crop&w=1600&q=80"
         className="pb-4 sm:pb-8"
       />
 

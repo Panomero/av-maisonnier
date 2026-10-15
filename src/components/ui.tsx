@@ -37,7 +37,7 @@ export function ArrowIcon({ className = "" }: { className?: string }) {
     <svg
       aria-hidden
       viewBox="0 0 40 10"
-      className={`h-2.5 w-10 shrink-0 ${className}`}
+      className={`mt-[0.45rem] h-2.5 w-10 shrink-0 ${className}`}
       fill="none"
       stroke="currentColor"
       strokeWidth="1"
@@ -48,7 +48,7 @@ export function ArrowIcon({ className = "" }: { className?: string }) {
 }
 
 const linkBase =
-  "group inline-flex items-center gap-4 text-sm tracking-[0.1em] leading-none";
+  "group inline-flex max-w-full items-start gap-4 text-left text-sm leading-[1.6] tracking-[0.1em]";
 
 function LinkLabel({
   children,

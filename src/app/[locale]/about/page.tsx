@@ -39,7 +39,7 @@ export default async function AboutPage({
 
       <PhotoBand
         src="/images/about.jpg"
-        fallbackSrc="https://images.unsplash.com/photo-1653538392863?auto=format&fit=crop&w=1600&q=80"
+        fallbackSrc="https://images.unsplash.com/photo-1653538392863-f31c7d38c8ab?auto=format&fit=crop&w=1600&q=80"
         className="pb-4 sm:pb-8"
       />
 

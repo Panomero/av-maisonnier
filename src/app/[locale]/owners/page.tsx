@@ -43,7 +43,7 @@ export default async function OwnersPage({
 
       <PhotoBand
         src="/images/owners.jpg"
-        fallbackSrc="https://images.unsplash.com/photo-1565419672978?auto=format&fit=crop&w=1600&q=80"
+        fallbackSrc="https://images.unsplash.com/photo-1565419672978-6ba05e8859d5?auto=format&fit=crop&w=1600&q=80"
         className="pb-4 sm:pb-8"
       />
 
