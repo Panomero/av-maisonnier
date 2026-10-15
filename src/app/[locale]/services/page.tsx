@@ -3,7 +3,7 @@ import { isLocale, defaultLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
 import { buildMetadata } from "@/lib/seo";
 import Reveal from "@/components/Reveal";
-import { Eyebrow, ItemList, PrimaryLink } from "@/components/ui";
+import { Eyebrow, ItemList, PrimaryLink, PhotoBand } from "@/components/ui";
 
 export async function generateMetadata({
   params,
@@ -36,6 +36,12 @@ export default async function ServicesPage({
           </h1>
         </Reveal>
       </section>
+
+      <PhotoBand
+        src="/images/services.jpg"
+        fallbackSrc="https://images.unsplash.com/photo-1588090272888?auto=format&fit=crop&w=1600&q=80"
+        className="pb-4 sm:pb-8"
+      />
 
       <section className="container-page py-12 border-t border-line">
         <Reveal>

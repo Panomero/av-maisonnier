@@ -48,7 +48,7 @@ export default async function HomePage({
           <Reveal delay={120}>
             <Photo
               src="/images/hero.jpg"
-              fallbackSrc="https://images.unsplash.com/photo-1715626783492-a23d191091d5?auto=format&fit=crop&w=1400&q=80"
+              fallbackSrc="https://images.unsplash.com/photo-1568385635449-98f5e250df66?auto=format&fit=crop&w=1400&q=80"
               className="aspect-[4/5] w-full lg:aspect-auto lg:h-[78vh]"
             />
           </Reveal>
@@ -56,11 +56,11 @@ export default async function HomePage({
       </section>
 
       <div className="border-b border-line">
-        <div className="container-page flex items-center gap-6 py-4 text-[0.7rem] tracking-[0.26em] uppercase text-bronze">
+        <div className="container-page flex items-center justify-between gap-4 py-4 text-[0.62rem] sm:text-[0.7rem] tracking-[0.2em] sm:tracking-[0.26em] whitespace-nowrap uppercase text-bronze">
           <span>
             {h.hero.brandLine1} / {h.hero.brandLine2}
           </span>
-          <span aria-hidden className="h-px flex-1 bg-line" />
+          <span aria-hidden className="hidden h-px flex-1 bg-line sm:block" />
           <span className="text-right">{dict.footer.location.split("·")[0].trim()}</span>
         </div>
       </div>

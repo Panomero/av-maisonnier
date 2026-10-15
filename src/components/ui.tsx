@@ -47,6 +47,27 @@ export function ArrowIcon({ className = "" }: { className?: string }) {
   );
 }
 
+const linkBase =
+  "group inline-flex items-center gap-4 text-sm tracking-[0.1em] leading-none";
+
+function LinkLabel({
+  children,
+  tone,
+}: {
+  children: React.ReactNode;
+  tone: "light" | "dark";
+}) {
+  return (
+    <span
+      className={`underline decoration-1 underline-offset-[7px] ${
+        tone === "dark" ? "decoration-bronze-light" : "decoration-bronze"
+      }`}
+    >
+      {children}
+    </span>
+  );
+}
+
 export function PrimaryLink({
   href,
   children,
@@ -59,26 +80,19 @@ export function PrimaryLink({
   return (
     <Link
       href={href}
-      className={`group inline-flex items-center gap-4 text-sm tracking-[0.1em] ${
-        tone === "dark" ? "text-offwhite" : "text-charcoal"
-      }`}
+      className={`${linkBase} ${tone === "dark" ? "text-offwhite" : "text-charcoal"}`}
     >
       <ArrowIcon
         className={`transition-transform group-hover:translate-x-1 ${
           tone === "dark" ? "text-bronze-light" : "text-bronze"
         }`}
       />
-      <span
-        className={`border-b pb-1 ${
-          tone === "dark" ? "border-bronze-light" : "border-bronze"
-        }`}
-      >
-        {children}
-      </span>
+      <LinkLabel tone={tone}>{children}</LinkLabel>
     </Link>
   );
 }
 
+/* Same geometry as PrimaryLink so stacked or side-by-side links line up. */
 export function SecondaryLink({
   href,
   children,
@@ -89,25 +103,29 @@ export function SecondaryLink({
   tone?: "light" | "dark";
 }) {
   return (
-    <Link
-      href={href}
-      className={`group inline-flex items-center gap-3 text-sm tracking-[0.08em] ${
-        tone === "dark" ? "text-offwhite" : "text-charcoal"
-      }`}
-    >
-      <span
-        className={`border-b pb-1 ${
-          tone === "dark" ? "border-bronze-light" : "border-bronze"
-        }`}
-      >
-        {children}
-      </span>
-      <ArrowIcon
-        className={`w-6 transition-transform group-hover:translate-x-1 ${
-          tone === "dark" ? "text-bronze-light" : "text-bronze"
-        }`}
+    <PrimaryLink href={href} tone={tone}>
+      {children}
+    </PrimaryLink>
+  );
+}
+
+export function PhotoBand({
+  src,
+  fallbackSrc,
+  className = "",
+}: {
+  src: string;
+  fallbackSrc?: string;
+  className?: string;
+}) {
+  return (
+    <div className={`container-page ${className}`}>
+      <Photo
+        src={src}
+        fallbackSrc={fallbackSrc}
+        className="h-56 w-full sm:h-72 lg:h-[24rem]"
       />
-    </Link>
+    </div>
   );
 }
 
